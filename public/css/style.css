@@ -1,0 +1,145 @@
+/* Global parameters */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"ubuntu", "lato";
+    width: 90%;
+    margin: auto;
+}
+main{
+    position: relative;
+    top: 102px;
+}
+
+/* Header */
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    width: 90%;
+}
+.logo-header-m{
+    width: 110px;
+    height: 70px;
+}
+.container-header-m{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger-menu{
+    margin: 10px;
+}
+.burger-menu>i{
+    font-size: 26px;
+}
+.container-header{
+    display: none;
+}
+.nav-bar-header{
+    display: none;
+}
+.nav-bar-header-m{
+    display: flex;
+}
+.nav-bar-header-m>ul>li{
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+}
+.nav-bar-header-m>ul>li>a{
+    text-decoration: none;
+}
+.form-search-header{
+    display: none;
+}
+.form-search-header-m{
+    display: flex;
+    margin: 10px 0px;
+    border: 1px solid lightsteelblue;
+}
+.form-search-header-m>input{
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    font-size: 16px;
+}
+.form-search-header-m>button{
+    min-width: 40px;
+    min-height: 40px;
+    background-color: lightsteelblue;
+    border: none;
+}
+.icons-header{
+    display: none;
+}
+
+
+
+
+
+
+
+/* Media queries */
+@media (min-width: 640px){
+    /* Header */
+    .form-search-header-m{
+        display: none;
+    }
+    .form-search-header{
+        display: flex;
+        margin: 10px 0px;
+        border: 1px solid lightsteelblue;
+        flex-grow: .66;
+    }
+    .form-search-header>input{
+        flex-grow: 1;
+        padding: 5px;
+        border: none;
+        font-size: 16px;
+    }
+    .form-search-header>button{
+        min-width: 40px;
+        min-height: 40px;
+        background-color: lightsteelblue;
+        border: none;
+    }
+    .nav-bar-header-m>ul{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-bar-header-m>ul>li{
+        display: inline;
+        margin: 7px 30px;
+    }
+}
+
+@media (min-width: 1024px){
+    /* Header */
+    .burger-menu{
+        display: none;
+    }
+    .icons-header{
+        display: block;
+    }
+    .icons-header{
+        font-size: 30px;
+    }
+    .icons-header>a{
+        margin: 7px;
+    }
+    .nav-bar-header-m>ul{
+        width: 100%;
+        justify-content: center;
+    }
+    .nav-bar-header-m>ul>li{
+        display: inline;
+        margin: 7px 30px;
+    }
+
+
+}

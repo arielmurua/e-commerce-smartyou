@@ -10,6 +10,8 @@ app.set('view engine', 'ejs')
 
 //Static files
 app.use('/static', express.static(path.join(__dirname, '../public')))
+app.use('/css', express.static(path.join(__dirname, '../public/css')))
+app.use('/images', express.static(path.join(__dirname, '../public/images')))
 
 
 //Routes
