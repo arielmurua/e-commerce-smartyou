@@ -1,6 +1,9 @@
+///Requires
 const express = require('express');
-const app = express();
 const path = require('path');
+
+//instance de express y defición de puerto
+const app = express();
 const port = process.env.PORT || 3030;
 
 //Template engine set
@@ -17,6 +20,9 @@ app.use('/images', express.static(path.join(__dirname, '../public/images')))
 //Routes
 const mainRoutes = require('./routes/mainRoutes');
 app.use('/', mainRoutes)
+
+const productsRoutes = require('./routes/productsRoutes');
+app.use('/products', productsRoutes)
 
 
 

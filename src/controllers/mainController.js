@@ -1,6 +1,6 @@
 const mainController = {
-    index: (req,res)=>{
-        res.render('index', {
+    home: (req,res)=>{
+        res.render('home', {
             pageTitle: 'Smartyou'
         });
     },
