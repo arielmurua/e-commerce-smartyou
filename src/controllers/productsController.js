@@ -1,4 +1,4 @@
-const productsController = {
+module.exports = {
     index: (req, res) => {
         res.render('productsIndex', {
             pageTitle: 'Listado Productos'
@@ -10,5 +10,3 @@ const productsController = {
         })
     }
 }
-
-module.exports = productsController

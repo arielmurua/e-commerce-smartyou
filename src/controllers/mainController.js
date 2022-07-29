@@ -1,10 +1,7 @@
-const mainController = {
+module.exports = {
     home: (req,res)=>{
         res.render('home', {
             pageTitle: 'Smartyou'
         });
     },
 }
-
-
-module.exports = mainController

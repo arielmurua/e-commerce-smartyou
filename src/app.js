@@ -24,6 +24,9 @@ app.use('/', mainRoutes)
 const productsRoutes = require('./routes/productsRoutes');
 app.use('/products', productsRoutes)
 
+const userRoutes = require('./routes/userRoutes');
+app.use('/user', userRoutes)
+
 
 
 

@@ -12,7 +12,7 @@ body{
 }
 main{
     position: relative;
-    top: 102px;
+    top: 132px;
 }
 
 /* HEADER */
@@ -54,7 +54,8 @@ header {
     display: none;
 }
 .nav-bar-header-m{
-    display: flex;
+    /*ESPERAR HASTA SABER USAR BUTTONS*/
+    display: none;
 }
 .nav-bar-header-m>ul>li{
     display: inline-block;
@@ -109,7 +110,7 @@ footer{
     color: rgba(255, 255, 255, 0.822);
     font-weight: bold;
     position: relative;
-    top: 100px;
+    top: 150px;
     z-index: 999;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -123,6 +124,7 @@ footer{
 }
 .card-footer>.parrafo{
     margin: 10px;
+    font-weight: lighter;
 }
 .card-footer>i{
     font-size: 44px;
@@ -132,6 +134,12 @@ footer{
     padding: 5px 10px;
 }
 
+/* HOME */
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 
 
@@ -139,6 +147,9 @@ footer{
 /* Media queries */
 @media (min-width: 640px){
     /* Header */
+    main{
+        top: 103px;
+    }
     .form-search-header-m{
         display: none;
     }
@@ -159,6 +170,9 @@ footer{
         min-height: 40px;
         background-color: lightsteelblue;
         border: none;
+    }
+    .nav-bar-header-m{
+        display: flex;
     }
     .nav-bar-header-m>ul{
         display: flex;
